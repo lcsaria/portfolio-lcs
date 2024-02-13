@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -5,7 +6,7 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
-import { Toaster } from "react-hot-toast";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,24 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // const [width, setWidth] = useState(0)
+  // const [height, setHeight] = useState(0)
+
+  // const handleWindowResize = () => {
+  //   setWidth(window.innerWidth);
+  //   setHeight(window.innerHeight);
+  // }
+
+  // useEffect(() => {
+  //   // component is mounted and window is available
+  //   handleWindowResize();
+  //   window.addEventListener('resize', handleWindowResize);
+  //   // unsubscribe from the event on component unmount
+  //   return () => window.removeEventListener('resize', handleWindowResize);
+    
+  // }, []);
+  // console.log(width, height);
+
   return (
     <html lang="en" className="!scroll-smooth">
       <body
@@ -33,7 +52,6 @@ export default function RootLayout({
             {children}
             <Footer />
 
-            <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
