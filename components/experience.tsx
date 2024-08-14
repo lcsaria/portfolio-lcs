@@ -27,6 +27,7 @@ const ExperienceTimeline = () => {
       type: "tween",
       duration: 0.2,
     }}
+    id="experience"
   >
     <div className="max-w-full rounded overflow-hidden shadow-lg mb-10">
       <div className="px-6 py-4 mb-10">
