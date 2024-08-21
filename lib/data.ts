@@ -27,22 +27,21 @@ export const experiencesData = [
     title: "Graduated Bachelor's Degree",
     location: "Indang, Cavite, PH",
     desc:
-      "I graduated after 4 years of studying. I immediately found a job after 5 months",
+      "I graduated after 4 years of studying. I immediately found a job after 5 months.",
     date: "Jan 21, 2020",
   },
-  
   {
     title: "Jr. Frontend Software Engineer",
     location: "Parañaque, NCR, PH",
     desc:
-      "I worked as a front-end developer for 6 months. I faced pressure and fortunate enough to build self-confidence",
+      "I worked as a front-end developer for 6 months. I faced pressure and fortunate enough to build self-confidence.",
     date: "May 2020 - Nov 2020",
   },
   {
     title: "Data Encoder",
     location: "General Trias, Cavite, PH",
     desc:
-      "Work at a school university to learn other skills aside from programming like data entry and automation",
+      "Work at a school university to learn other skills aside from programming like data entry and automation.",
     date: "May 2021 - June 2022",
   },
   {
@@ -55,7 +54,7 @@ export const experiencesData = [
   {
     title: "Packaged App Development Analyst",
     location: "Taguig, NCR, PH",
-    desc: "This is my current work. Focus on upskilling and creating image for the future as programmer", 
+    desc: "This is my current work. Focus on upskilling and creating image for the future as programmer.", 
     date: "March 2023 - present",
   },
 ] as const;

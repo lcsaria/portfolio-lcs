@@ -31,9 +31,9 @@ const ExperienceTimeline = () => {
   >
     <div className="max-w-full rounded overflow-hidden shadow-lg mb-10">
       <div className="px-6 py-4 mb-10">
-        <h2 className="font-bold text-xl mb-2">Experience Timeline</h2>
+        <h2 className="font-bold text-xl dark:text-white mb-2">Experience Timeline</h2>
         <ul>
-          {experiencesData.map((experience, index) => (
+          {experiencesData.toReversed().map((experience, index) => (
             <li key={index} className={`relative flex items-baseline gap-6 pb-5 ${!isMobile ? 'before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400' : ''}`}>
               {!isMobile && (
                 <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
@@ -43,10 +43,10 @@ const ExperienceTimeline = () => {
                 </div>
               )}
               <div>
-                <p className="text-lg font-bold text-gray-800">{experience.title}</p>
-                <p className="mt-2 text-gray-600 text-sm">{experience.location}</p>
-                <p className="mt-2 text-gray-600 text-sm">{experience.desc}</p>
-                <p className="mt-2 text-gray-600 text-sm">{experience.date}</p>
+                <p className="text-lg font-bold text-gray-800 dark:text-white">{experience.title}</p>
+                <p className="mt-2 text-gray-600 dark:text-white text-sm">{experience.location}</p>
+                <p className="mt-2 text-gray-600 dark:text-white text-sm">{experience.desc}</p>
+                <p className="mt-2 text-gray-600 dark:text-white text-sm">{experience.date}</p>
               </div>
             </li>
           ))}
