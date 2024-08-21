@@ -33,7 +33,7 @@ const ExperienceTimeline = () => {
       <div className="px-6 py-4 mb-10">
         <h2 className="font-bold text-xl dark:text-white mb-2">Experience Timeline</h2>
         <ul>
-          {experiencesData.toReversed().map((experience, index) => (
+          {experiencesData.map((experience, index) => (
             <li key={index} className={`relative flex items-baseline gap-6 pb-5 ${!isMobile ? 'before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400' : ''}`}>
               {!isMobile && (
                 <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
