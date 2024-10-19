@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import defaultProfile from "../public/defaultProfile.jpg"
+import defaultProfile from "../public/defaultProfile.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -33,12 +33,12 @@ export default function Intro() {
           >
             <Image
               src={defaultProfile}
-              alt="Ricardo portrait"
+              alt="portrait"
               width="216"
               height="216"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -59,15 +59,15 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-20 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         Hello,<span className="font-bold"> I'm Lmarl.</span> I'm a{" "}
         <span className="font-bold">programmer</span> with{" "}
         <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">coding and fixing bugs</span>. My focus is{" "}
-        <span className="underline">Java (Spring) and SQL</span>.
+        building <span className="italic">coding, fixing bugs and solving real-time</span>. My
+        focus is <span className="underline">Java and SQL</span>.
       </motion.h1>
 
       <motion.div
