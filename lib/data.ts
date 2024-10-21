@@ -1,7 +1,4 @@
-import React from "react";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
 
 export const links = [
   {
@@ -24,17 +21,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated Bachelor's Degree",
-    location: "Indang, Cavite, PH",
-    desc:
-      "I graduated after 4 years of studying. I immediately found a job after 5 months.",
-    date: "Jan 21, 2020",
-  },
-  {
     title: "Jr. Frontend Software Engineer",
     location: "Parañaque, NCR, PH",
     desc:
-      "I worked as a front-end developer for 6 months. I faced pressure and fortunate enough to build self-confidence.",
+      "After graduation last Jan 2020, I worked as a front-end developer for 6 months. I faced pressure and fortunate enough to build self-confidence.",
     date: "May 2020 - Nov 2020",
   },
   {
@@ -48,11 +38,11 @@ export const experiencesData = [
     title: "Jr. Java Developer",
     location: "Dasmariñas, Cavite, PH",
     desc:
-      "To fulfill full-stack in the future, I focus on design, development, testing (unit & automation), implementation and maintenance of specific software solutions in java while maintaining a focus on quality principles.",
+      "I'm entered in back-end world where I learn APIs and handle database operations and craft robust API endpoints.",
     date: "Jun 2022 - Feb 2023",
   },
   {
-    title: "Packaged App Development Analyst",
+    title: "Software Engineer Analyst",
     location: "Taguig, NCR, PH",
     desc: "This is my current work. Focus on upskilling and creating image for the future as programmer.", 
     date: "March 2023 - present",

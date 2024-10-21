@@ -4,8 +4,7 @@ import Image from "next/image";
 import React from "react";
 import defaultProfile from "../public/defaultProfile.jpg";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -66,8 +65,11 @@ export default function Intro() {
         Hello,<span className="font-bold"> I'm Lmarl.</span> I'm a{" "}
         <span className="font-bold">programmer</span> with{" "}
         <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">coding, fixing bugs and solving real-time</span>. My
-        focus is <span className="underline">Java and SQL</span>.
+        building{" "}
+        <span className="italic">
+          coding, fixing bugs and solving real-time
+        </span>
+        . My focus is <span className="underline">Java and SQL</span>.
       </motion.h1>
 
       <motion.div
@@ -114,6 +116,7 @@ export default function Intro() {
         >
           <FaGithubSquare />
         </a>
+
       </motion.div>
     </section>
   );
